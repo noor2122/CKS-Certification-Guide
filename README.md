@@ -1,23 +1,11 @@
-# Ultimate Certified Kubernetes Security Specialist (CKS) Preparation Guide - V1.31 (2025)
-
-## Hit the Star! :star:
-
-If you are planning to use this repo for reference, please hit the star. Thanks!
+# Ultimate Certified Kubernetes Security Specialist (CKS) Preparation Guide - V1.34 (2026)
 
 ## CKS Exam Overview
 
 The Certified Kubernetes Security Specialist (CKS) exam has a duration of 2 hours.
 To pass the exam, candidates need to achieve a score of at least 66%.
-The exam will be on Kubernetes version 1.31.
-Once the certificate is earned, the CKS certification remains valid for 2 years. The cost to take the exam is $395 USD.
-
-## CKS Exam Coupon (30% Off Exclusive Discount)
-
-> **CKA Price Update:** The CKS exam price will increase to $435 in January 2025. Take advantage of the current discount and complete the exam within 12 months to maximize your savings.
-
-To save on CKS exam registration, use the following coupon code.
-
-**Coupon:** Use code **DCUBE30** at [kube.promo/cks](https://kube.promo/cks)
+As of Jan 2026 the exam will be on Kubernetes version 1.34. https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf
+Once the certificate is earned, the CKS certification remains valid for 2 years.
 
 ## Table of Contents
 
