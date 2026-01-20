@@ -501,6 +501,9 @@ ETCDCTL_API=3 etcdctl \
    get /registry/secrets/default/test-secret | hexdump -C
 ```
 ### Container Runtime sandboxed
+As part of this, we need to doo the following,
+1. Create a RuntimeClass to be used for the untrusted workloades,
+2. Configure the required Pod to use it.
 > [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/) : Improve isolation and security using sandbox container runtimes for important workloads
 ```bash
 # Create a Runtime Class - gVisor
