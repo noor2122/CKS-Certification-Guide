@@ -501,7 +501,7 @@ ETCDCTL_API=3 etcdctl \
    get /registry/secrets/default/test-secret | hexdump -C
 ```
 ### Container Runtime sandboxed
-As part of this, we need to doo the following,
+As part of this, we need to do the following,
 1. Create a RuntimeClass to be used for the untrusted workloades,
 2. Configure the required Pod to use it.
 > [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/) : Improve isolation and security using sandbox container runtimes for important workloads
@@ -631,7 +631,11 @@ vim /etc/kubernetes/manifests/kube-apiserver
 kubesec scan pod.yaml
 
 # Scan using Kubesec docker image
-docker run -i kubesec/kubesec:512c5e0 scan /dev/stdin > pod.yaml
+docker run -i kubesec/kubesec:512c5e0 scan /dev/stdin < pod.yaml
+
+And if want to save the results then,   docker run -i kubesec/kubesec:512c5e0 scan /dev/stdin < pod.yaml > scan-report.json
+
+> [Referance](https://github.com/controlplaneio/kubesec?tab=readme-ov-file#docker-usage)
 ```
 ### Generate Software Bills of Materials (SBOMs) using bom
 > [bom](https://github.com/kubernetes-sigs/bom) :
